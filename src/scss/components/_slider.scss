@@ -37,12 +37,12 @@
     background-size: cover;
 
     &.slick-prev {
-      background-image: url(../../../src/img/iconos/arrow-left.svg);
+      background-image: url("../../../src/img/iconos/arrow-left.svg");
       left: 6vw;
     }
 
     &.slick-next {
-      background-image: url(../../../src/img/iconos/arrow-right.svg);
+      background-image: url("../../../src/img/iconos/arrow-right.svg");
       right: 6vw;
     }
   }
