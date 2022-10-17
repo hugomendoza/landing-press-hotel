@@ -1,0 +1,61 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: min(1080px, 90%);
+  margin: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.heading-1 {
+  font-size: toRem(40);
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: toRem(30);
+  }
+}
+
+.heading-2 {
+  font-size: toRem(17);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $gray-700;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.btn-primary {
+  border: 1px solid $red;
+  border-radius: 0.2rem;
+  color: $red;
+  font-size: toRem(17);
+  text-align: center;
+  min-width: 160px;
+  display: table;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.45rem 0 0.35rem;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-gray {
+  background-color: $gray-100;
+}

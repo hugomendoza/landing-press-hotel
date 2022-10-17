@@ -1,0 +1,12 @@
+.footer {
+  color: black;
+  padding: 1rem;
+
+  .row {
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: toRem(13);
+  }
+}

@@ -1,0 +1,53 @@
+.header-banner {
+  width: 100%;
+  height: toRem(106);
+  background-color: rgba($color: #ffffff, $alpha: 0.9);
+  padding: 0 5rem;
+  color: black;
+  margin: toRem(100) 0 toRem(408) 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-size: toRem(12);
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: toRem(200);
+    height: toRem(200);
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 768px) {
+    height: toRem(80);
+    padding: 0 2rem;
+
+    &__brand {
+      width: toRem(150);
+      height: toRem(150);
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    height: toRem(50);
+    padding: 0 2rem;
+    margin: toRem(50) 0 toRem(350) 0;
+
+    &__brand {
+      width: toRem(90);
+      height: toRem(90);
+    }
+
+    &__text {
+      font-size: toRem(9);
+    }
+    
+  }
+}

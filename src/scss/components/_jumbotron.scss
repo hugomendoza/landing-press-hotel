@@ -1,0 +1,46 @@
+.jumbotron {
+  background-color: black;
+
+  &__wrapper {
+    width: min(810px, 90%);
+    margin: auto;
+    text-align: center;
+    padding: toRem(50) 0 toRem(110) 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: min(600px, 70%);
+      height: toRem(5);
+      background-color: white;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    font-family: $secondaryFont;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: toRem(30);
+  }
+
+  &__text {
+    margin-top: toRem(40);
+  }
+
+  @media screen and (max-width: 768px) {
+    &__subtitle {
+      font-size: toRem(25);
+    }
+  }
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press Hotel</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="/dist/css/normalize.css">
+  <!-- Litepicker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"/>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/dist/css/main.css">
+</head>
+<body>
+  <!-- formulario de registro -->
+  <section class="modal">
+    <div class="modal__background"></div>
+    <div class="modal__form">
+      <button
+        type="button"
+        class="modal__open"
+      >
+        <img
+          src="/src/img/iconos/open-modal.svg"
+          alt="Book Now"
+        >
+      </button>
+      <header class="modal__header">
+        <button
+          type="button"
+          class="modal__close"
+        >
+          <img
+            src="/src/img/iconos/close-ok.svg"
+            alt="Icono cerrar"
+          >
+        </button>
+      </header>
+      <form id="form">
+        <h2 class="heading-1">Book now</h2>
+        <fieldset>
+          <label for="arrival">arrival date</label>
+          <input
+            type="text"
+            name="arrival"
+            id="arrival"
+            class="modal__input"
+          >
+        </fieldset>
+        <fieldset>
+          <label for="departure">Departure date</label>
+          <input
+            type="text"
+            name="departure"
+            id="departure"
+            class="modal__input"
+          >
+        </fieldset>
+        <fieldset class="modal__guests">
+          <label for="guests">guest</label>
+          <div class="row">
+            <div class="relative">
+              <select name="guests">
+                <option value="">1 adult</option>
+                <option value="">2 adult</option>
+              </select>
+            </div>
+            <div class="relative">
+              <select name="child">
+                <option value="">1 child</option>
+                <option value="">2 child</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <p class="modal__desc">GET READY! You are about to get our best price. Guaranteed.</p>
+        </fieldset>
+        <fieldset>
+          <button
+            type="submit"
+            class="btn-primary"
+          >
+            let's go
+          </button>
+        </fieldset>
+        <fieldset>
+          <a
+            href=""
+            class="modal__link row"
+          >
+            <p>or, book your group</p>
+            <img
+              src="/src/img/iconos/long-arrow.svg"
+              alt="Icon Arrow"
+            >
+          </a>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <!-- Curousel de Fondo -->
+    <article class="slider slider--banner">
+      <figure class="slider__item">
+        <img
+          src="/src/img/slider/slider1.jpg"
+          alt="Press Hotel"
+          loading="lazy"
+          class="slider__img"
+        >
+      </figure>
+      <figure class="slider__item">
+        <img
+          src="/src/img/slider/slider2.jpg"
+          alt="Press Hotel"
+          loading="lazy"
+          class="slider__img"
+        >
+      </figure>
+      <figure class="slider__item">
+        <img
+          src="/src/img/slider/slider3.jpg"
+          alt="Press Hotel"
+          loading="lazy"
+          class="slider__img"
+        >
+      </figure>
+      <figure class="slider__item">
+        <img
+          src="/src/img/slider/slider4.jpg"
+          alt="Press Hotel"
+          loading="lazy"
+          class="slider__img"
+        >
+      </figure>
+    </article>
+    <!-- Fin Curousel de Fondo -->
+    <!-- Contenido de Banner -->
+    <article class="relative">
+      <div class="container">
+        <!-- Header Banner -->
+        <header
+          class="header-banner"
+          data-aos="fade-up"
+        >
+          <p class="header-banner__text">Portland, Maine</p>
+          <img
+            src="/src/img/iconos/logo-ok.svg"
+            alt="Press Hotel"
+            loading="lazy"
+            class="header-banner__brand"
+          >
+        </header>
+        <!--Fin Header Banner -->
+        <!-- Textos Banner -->
+        <div
+          class="jumbotron"
+          data-aos="fade-up"
+        >
+          <div class="jumbotron__wrapper relative">
+            <h1 class="jumbotron__title heading-1">History in the making.</h1>
+            <h2 class="jumbotron__subtitle">Portland's newest boutique hotel.</h2>
+            <p class="jumbotron__text text">Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas turpis, non vehicula sit turpis varius non ante, inventore consectetur. Donec luctus vel eu, augue non. Non vehicle sit turpis varius non ante, inventore consec. Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas turpis, non vehicula sit turpis varius non ante, inventore consectetur. Donec luctus vel eu, augue non. Non vehicle sit turpis varius non ante, inventore consec.Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas turpis, non vehicula sit turpis varius non ante, inventore consectetur. Donec luctus vel eu, augue non. Non vehicle sit turpis varius non ante, inventore</p>
+          </div>
+        </div>
+        <!-- Fin Textos Banner -->
+      </div>
+    </article>
+    <!--Fin Contenido de Banner -->
+  </section>
+
+  <!-- Section de Acomodations -->
+  <section class="bg-gray accommodations">
+    <div class="container">
+      <div class="row">
+        <!-- Lado derecho -->
+        <article
+          data-aos="fade-right"
+        >
+          <h3 class="heading-2 heading-2--bold text-center">accommodations</h3>
+          <h2 class="heading-1">hollywood, meet industrial chic</h2>
+          <p class="text">Lorem ipsum dolor sit amet, donec luctus vel, augue duis. Voluptas turpis, non vehicula sit turpis varius non ante, inventore consectetur. Donec luctus vel eu, augue non. Non vehicle sit turpis varius non ante, inventore consec.</p>
+          <a
+            href=""
+            class="btn-primary"
+          >
+            View Rooms
+          </a>
+        </article>
+        <!-- Lado Izquierdo -->
+        <figure
+          data-aos="fade-left"
+        >
+          <img
+            src="/src/img/accommodations/room.jpg"
+            alt="hollywood, meet industrial chic"
+          >
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- End Section de Acomodations -->
+
+  <!-- Seccion events -->
+  <section class="events">
+    <div class="container">
+      <!-- header -->
+      <header
+        data-aos="fade-up"
+      >
+        <h2 class="heading-2 text-center">this month’s most anticipated events</h2>
+      </header>
+      <!-- Fin header -->
+      <div
+        class="row"
+        data-aos="fade-up"
+      >
+        <!-- Cartas de evento -->
+        <article class="card">
+          <figure class="card__figure">
+            <img
+              src="/src/img/events/event1.jpg"
+              alt="evento 1"
+            >
+            <figcaption class="card__date">
+              <p>8</p>
+              <span>Nov</span>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure class="card__figure">
+            <img
+              src="/src/img/events/event2.jpg"
+              alt="evento 2">
+            <figcaption class="card__date">
+              <p>16</p>
+              <span>Nov</span>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure class="card__figure">
+            <img
+              src="/src/img/events/event3.jpg"
+              alt="evento 3"
+            >
+            <figcaption class="card__date">
+              <p>2</p>
+              <span>Nov</span>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure class="card__figure">
+            <img
+              src="/src/img/events/event4.jpg"
+              alt="evento 4"
+            >
+            <figcaption class="card__date">
+              <p>3</p>
+              <span>Nov</s´p>
+            </figcaption>
+          </figure>
+        </article>
+        <!-- Fin Cartas de evento -->
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer bg-gray">
+    <div class="container">
+      <div class="row">
+        <p>390 Congress St. (at Congress & Exchange Streets), Portland, Maine  •  MAP ></p>
+        <p>(207) 653.9990  •  info@portlandpresshotel.com</p>
+      </div>
+    </div>
+  </footer>
+  <!-- fin footer -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- jQuery Validation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Litepicker JS -->
+  <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+  <!-- Custom JS -->
+  <script src="/dist/js/main.js"></script>
+</body>
+</html>
